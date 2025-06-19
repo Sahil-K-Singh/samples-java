@@ -2,13 +2,13 @@
 
 This is a simple Todo application built with Spring Boot, PostgreSQL, and Redis. The application provides RESTful APIs to manage Todo items.
 
-## Prerequisites
+## 🛠️ Prerequisites
 
 - Java 8
 - Maven
 - Docker
 
-## Installation
+## 🚀 Installation
 
 ### 1. Clone the Repository
 
@@ -25,7 +25,7 @@ mvn clean install
 
 ### 3. Set Up Docker Containers
 
-#### PostgreSQL Container
+#### 🐬 MySQL Container
 
 1. Pull the MySQL Docker Image:
 
@@ -39,7 +39,7 @@ mvn clean install
    docker run --name mysql-todo -e MYSQL_DATABASE=todoapp -e MYSQL_USER=yourusername -e MYSQL_PASSWORD=yourpassword -e MYSQL_ROOT_PASSWORD=rootpassword -p 3306:3306 -d mysql:latest
     ```
 
-#### Redis Container
+#### 🧠 Redis Container
 
 1. Pull the Redis Docker Image:
 
@@ -74,7 +74,7 @@ spring.redis.port=6379
 mvn spring-boot:run
 ```
 
-## Database Setup
+🗃️ Database Setup
 
 The necessary schema for the Todo application will be created automatically by Hibernate. However, you can manually create the table using the following SQL script:
 
@@ -87,7 +87,7 @@ CREATE TABLE todo (
 );
 ```
 
-## Usage
+## 📡 Usage 
 
 ### API Endpoints
 
